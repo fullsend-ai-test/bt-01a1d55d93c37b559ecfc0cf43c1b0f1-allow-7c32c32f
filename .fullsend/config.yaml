@@ -10,8 +10,3 @@ tracker:
                 - fullsend-ai/fullsend
                 - fullsend-ai/agents
 runtime: dummy
-agents:
-    - name: review
-      trigger: "false"
-    - name: retro
-      trigger: event.entity.kind == "change_proposal" && event.transition.kind in ["closed", "merged"]
